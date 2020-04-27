@@ -9,7 +9,8 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 curl -sL https://deb.nodesource.com/setup_13.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
 sudo apt install build-essential cmake vim python3-dev nodejs rfkill \
-	 wireless-tools wpasupplicant dirmngr gnupg apt-transport-https ca-certificates -y
+	 wireless-tools wpasupplicant dirmngr gnupg apt-transport-https ca-certificates \
+	 python3-pip python3-testresources libffi-dev -y
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 sudo sh -c 'echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" > /etc/apt/sources.list.d/mono-official-stable.list'
 sudo apt update -y
